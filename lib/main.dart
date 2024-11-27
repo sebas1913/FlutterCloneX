@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widgets/widgets/CustomAppbar.dart';
+import 'package:flutter_widgets/widgets/CustomBottomnavbar.dart';
+import 'package:flutter_widgets/widgets/CustomFloatingButton.dart';
+import 'package:flutter_widgets/widgets/CustomTweets.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,8 +31,11 @@ class HomeScreen extends StatelessWidget {
       body: Column(
         children: [
           CustomAppbar(),
+          CustomTweets()
         ],
       ),
+      floatingActionButton: CustomFloatingButton(),
+      bottomNavigationBar: CustomNavbar(),
     );
   }
 }
