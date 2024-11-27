@@ -47,6 +47,11 @@ class _CustomTweetsState extends State<CustomTweets> {
                               width: 18,
                               height: 18,
                             ),
+                            const SizedBox(width: 4),
+                            const Text(
+                              '@LeoMessi',
+                              style: TextStyle(color: Colors.grey),
+                            ),
                           ],
                         ),
                         const SizedBox(height: 3),
@@ -75,7 +80,6 @@ class _CustomTweetsState extends State<CustomTweets> {
               const SizedBox(height: 15),
               const Divider(color: Colors.white, thickness: 0.3, height: 1),
               const SizedBox(height: 15),
-
 
               // Segunda publicación
               Row(
@@ -106,6 +110,11 @@ class _CustomTweetsState extends State<CustomTweets> {
                               'https://cdn-icons-png.flaticon.com/256/7641/7641727.png',
                               width: 18,
                               height: 18,
+                            ),
+                            const SizedBox(width: 4),
+                            const Text(
+                              '@Minecraft',
+                              style: TextStyle(color: Colors.grey),
                             ),
                           ],
                         ),
@@ -143,7 +152,7 @@ class _CustomTweetsState extends State<CustomTweets> {
                   const CircleAvatar(
                     radius: 17,
                     backgroundImage: NetworkImage(
-                      'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Escudo_del_Deportivo_Independiente_Medell%C3%ADn.png/600px-Escudo_del_Deportivo_Independiente_Medell%C3%ADn.png',
+                      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSHG24Y_aqc_I635Xjjp3p3dFyTazfzpGv4g&s',
                     ),
                   ),
                   const SizedBox(width: 10),
@@ -153,7 +162,7 @@ class _CustomTweetsState extends State<CustomTweets> {
                         Row(
                           children: [
                             const Text(
-                              'DIM Oficial',
+                              'Atenea',
                               style: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.w900,
@@ -166,18 +175,23 @@ class _CustomTweetsState extends State<CustomTweets> {
                               width: 18,
                               height: 18,
                             ),
+                            const SizedBox(width: 4),
+                            const Text(
+                              '@AteneaProfesional',
+                              style: TextStyle(color: Colors.grey),
+                            ),
                           ],
                         ),
                         const SizedBox(height: 3),
                         const Text(
-                          '[✊🔴🔵] Hoy tenemos que alentar más de 90 minutos, la buena energía siempre, creyendo y apoyando a los nuestros, ni un segundo de dudas, entre todos remontamos y damos el paso a la final. ¡DALE MEDELLÍN!🔥❤️💙',
+                          'Somos una marca de maquillaje experta con productos de alta cobertura y calidad. Conoce el amplio portafolio de productos para toda ocasión.',
                           style: TextStyle(fontSize: 14, color: Colors.white),
                         ),
                         const SizedBox(height: 8),
                         ClipRRect(
                           borderRadius: BorderRadius.circular(12),
                           child: Image.network(
-                            'https://pbs.twimg.com/media/GcnCA-1XwAAS8M8?format=jpg&name=large',
+                            'https://cibermake.com/wp-content/uploads/2024/02/Rubores_1st_Scene_Atenea.jpg',
                             width: 350,
                             height: 200,
                             fit: BoxFit.cover,
@@ -190,7 +204,6 @@ class _CustomTweetsState extends State<CustomTweets> {
                   ),
                 ],
               ),
-
             ],
           ),
         ),

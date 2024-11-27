@@ -20,22 +20,35 @@ class MyApp extends StatelessWidget {
   }
 }
 
-
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
   @override
+  _HomeScreenState createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  String currentView = 'Para ti'; // Vista inicial
+
+  // Método para cambiar la vista al hacer clic en el AppBar
+  void changeView(String view) {
+    setState(() {
+      currentView = view;
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       backgroundColor: Colors.black,
       body: Column(
         children: [
-          CustomAppbar(),
-          CustomTweets()
+          CustomAppbar(changeView: changeView, currentView: currentView,),
+          currentView == 'Para ti' ? const CustomTweets() : const Center(child: Text('Seguidos', style: TextStyle(color: Colors.white))),
         ],
       ),
-      floatingActionButton: CustomFloatingButton(),
-      bottomNavigationBar: CustomNavbar(),
+      floatingActionButton: const CustomFloatingButton(),
+      bottomNavigationBar: const CustomNavbar(),
     );
   }
 }
